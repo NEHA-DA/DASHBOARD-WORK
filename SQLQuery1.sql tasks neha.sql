@@ -79,4 +79,39 @@ and amount_spend>25000;
 select* from customers
 where not country=
 'india';
+--task16---
+select *
+from customers
+where country = 'india'
+--order by amount_spend dec;
+order by amount_spend asc;
+
+---task17---
+select *
+from customers
+order by amount_spend
+desc;
+
+--task18---
+select userid,age,country,
+amount_spend
+from customers
+order by age asc;
+
+---task19---
+select *
+from customers
+where age between 25 and 28
+and amount_spend>20000
+and (country = 'india'
+or country = 'usa')
+order by amount_spend
+desc;
+
+---task20---
+select *
+from customers
+where age >=25 and amount_spend>20000 and country = 'usa'
+order by amount_spend desc;
+
 
